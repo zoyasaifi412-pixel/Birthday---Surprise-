@@ -1,0 +1,412 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 17th Birthday ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ffd6e7, #fff0f6, #ffe4ef);
+  color: #6b2145;
+  overflow-x: hidden;
+}
+
+/* LOCK SCREEN */
+#lockScreen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.lockBox {
+  width: 100%;
+  max-width: 380px;
+  padding: 35px 25px;
+  text-align: center;
+  background: rgba(255,255,255,0.8);
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(150, 50, 90, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.lock {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.lockBox h1 {
+  margin: 5px 0;
+  font-size: 28px;
+}
+
+.lockBox p {
+  color: #9b5575;
+}
+
+#pin {
+  width: 180px;
+  padding: 14px;
+  border: 2px solid #f39abb;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 22px;
+  outline: none;
+  letter-spacing: 8px;
+  margin: 15px 0;
+}
+
+.unlockBtn {
+  display: block;
+  margin: auto;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 25px;
+  background: #e95d91;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(220,70,120,.3);
+}
+
+#error {
+  color: #d93667;
+  display: none;
+  margin-top: 12px;
+}
+
+/* MAIN MESSAGE */
+#main {
+  display: none;
+  padding: 25px 15px 60px;
+}
+
+.card {
+  max-width: 750px;
+  margin: auto;
+  background: rgba(255,255,255,0.88);
+  border-radius: 30px;
+  padding: 30px 22px;
+  box-shadow: 0 15px 50px rgba(130, 40, 80, .18);
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  text-align: center;
+  font-size: clamp(27px, 7vw, 48px);
+  line-height: 1.2;
+  color: #d83f78;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.message {
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.message p {
+  margin-bottom: 24px;
+}
+
+.final {
+  text-align: center;
+  font-weight: bold;
+  color: #d83f78;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+/* HEART ANIMATION */
+.heart {
+  position: fixed;
+  bottom: -30px;
+  font-size: 20px;
+  animation: float 7s linear infinite;
+  opacity: .75;
+  z-index: 1;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: .8;
+  }
+
+  100% {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* CONFETTI */
+.confetti {
+  position: fixed;
+  width: 8px;
+  height: 14px;
+  top: -20px;
+  animation: fall 4s linear forwards;
+  z-index: 5;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOCK SCREEN -->
+<section id="lockScreen">
+
+  <div class="lockBox">
+
+    <div class="lock">🔐💗</div>
+
+    <h1>Something Special For You</h1>
+
+    <p>Enter the secret PIN to open your birthday surprise 🎂</p>
+
+    <input
+      id="pin"
+      type="password"
+      inputmode="numeric"
+      maxlength="2"
+      placeholder="••"
+    >
+
+    <button class="unlockBtn" onclick="unlock()">
+      🔓 Unlock My Surprise
+    </button>
+
+    <div id="error">
+      Wrong PIN 🥺 Try again ❤️
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MAIN WEBSITE -->
+<section id="main">
+
+  <div class="card">
+
+    <h1 class="title">
+      HAPPIESTTTTTTT<br>
+      BIRTHDAYYYYYY<br>
+      MERAAAAA BETUUUUUUUUU ❤️🥺🎂
+    </h1>
+
+    <div class="subtitle">
+      Happy 17th Birthday, meraaa bacchaaa 🤗❤️
+    </div>
+
+    <div class="message">
+
+      <p>
+      Babyyy sabse phle aapko merii trf se dil se thanks sab chizo ke liye🥹💗
+      aaj se aapka ek naya saal chalu hua h happy 17th birthday meraaa bacchaaa🤗❤️
+      Allah se roz Mai dua krungi tumhe har ek choti choti chizo se nawaze jiske aap haqdar ho.
+      merii jaan m dil se dua krungi tumhe hr vo chiz mile jise tumne hr dua m manga hoga
+      aur sath sath m bhi mil jau ye bhi dua krungi ❤️‍🩹😭🫂
+      </p>
+
+      <p>
+      Sachhhiii MERIIII PHOOLJHADIIII tum bhot special ho mere liye.
+      m nhi chahti ki bs m tumhe tumhare birthday pr special feel krau
+      blki m ye chahti hu m tumhe roz hr ek moment special feel krau🥹💗
+
+      meraaaa surajmukhi merii baat hamesha dhiyan rakhna ki aap mere liye
+      bhot zyada important person ho.
+
+      ghar walo se bhi zyada kbhi ye mt sochna ki tum aese nhi ho jo mujhe chahiye
+      blki mujhe tumhare alava tumhare jaise koi nhi chahiye.
+      bs aap chahiye ho merii jaan🥰💕
+      </p>
+
+      <p>
+      JAAAANNNNNN ek baat aur dhiyan rakhna hamesha 🥺
+      aapka mere upr pura haq h aur rhega m sirf aapki hu merriii jaan🥺
+
+      mere ko kbhi bhi kisi aur k liye chod kr mt jana 😣
+      m promise krti hu Mai hamesha aapke sath rhungi.
+      m pkka kbhi kahi nhi jaungi.
+
+      mujhe nhi chahiye koi bhi aapke alawa meraa babu.
+      mai tumhe pane ke liye is baari kuch bhi krne ko tyar hu.
+
+      Shyd allah ne aese hi milana likha hai hamare naseeb m
+      thode dhuko ke sath pr ham kbhi bhi ek dusre ka sath kbhi nhi chodenge.
+      ek dusre ko smjhenge aur sambhalenge 💕
+
+      chahe hame sath rehne ke liye kuch bhi Krna pde..🥺
+      </p>
+
+      <p>
+      BABYYY m jnti hu m tumhare liye perfect nhi hu,
+      lekin jaisi tumhi chahiye m vaise hi bnne ki koshish krungi.
+
+      kbhi bhi kisi bhi chiz ko lekr ab hurt nhi krungi.
+      tumhare liye m hr vo kaam krungi jisse aap khush ho🤗
+
+      mujhe tumse kbhi bhi kuch bhi nhi chahiye bs ek chiz ke alava
+      hamesha mere sath rehna kbhi Kahi mt jana.
+
+      I REALLY LOVEEEE YOUUUUU MERAAA BACCHAAA🥺💗
+      </p>
+
+      <p>
+      MERRAAA BACCHHAAAA mai dil se sorry bolti hu apni har vo glti ke liye
+      jo mene ab tk kri hai.
+
+      mai aesi glti kbhi bhi anjaane m bhi nhi krungi jisse aapko bura lge.
+      un galtiya ko please maaf kr dena.
+
+      mai abse hamesha dhiyan rkhungi 😞🥺
+
+      agr m koi glt decision kbhi lu bhi to rok lena mujhe vo krne se.
+      mujhe smjha dena ye glt h.
+
+      aapka mere upr pura haq h mera baccha.
+      kbhi mt sochna ki nhi h 🥺
+      hamesha aapka hi rhega ❤️‍🩹🫂
+      </p>
+
+      <p>
+      Meriii jaaannnnnnnn tum apni life m hamesha khush rehna.
+      sachh m tumhe dukhi dekhkr bhot bura lgta h.
+
+      allah tumhe sari khushiyan de bs dukh n de😞
+
+      tumhara sath m hamesha dungi kbhi akela chod kr nhi jaungi ab kbhi
+      MERRAAAAAA BACCHHAAA 🥺❤️‍🩹
+      </p>
+
+      <p class="final">
+      Once again,<br>
+      HAPPYYYYYYY BIRTHDAYYYY<br>
+      MEREEEEE WAALEEEE🥹🫂💗<br><br>
+
+      I LOVEEEEEEEEEEEE YOUUUUUUUU<br>
+      MERRRRIIIIIIIII JAAANNNNNNNNNNNN ❤️😘🥰
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<script>
+
+/* PIN */
+function unlock() {
+
+  const enteredPin = document.getElementById("pin").value;
+  const error = document.getElementById("error");
+
+  if (enteredPin === "45") {
+
+    document.getElementById("lockScreen").style.display = "none";
+    document.getElementById("main").style.display = "block";
+
+    createConfetti();
+
+  } else {
+
+    error.style.display = "block";
+
+  }
+}
+
+
+/* ENTER KEY */
+document.getElementById("pin").addEventListener("keypress", function(e) {
+
+  if (e.key === "Enter") {
+    unlock();
+  }
+
+});
+
+
+/* FLOATING HEARTS */
+function createHeart() {
+
+  const heart = document.createElement("div");
+
+  heart.className = "heart";
+
+  const hearts = ["❤️","💗","💕","💖","💞","🥺"];
+
+  heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 10000);
+
+}
+
+setInterval(createHeart, 700);
+
+
+/* CONFETTI */
+function createConfetti() {
+
+  for (let i = 0; i < 80; i++) {
+
+    const confetti = document.createElement("div");
+
+    confetti.className = "confetti";
+
+    confetti.innerHTML = "💗";
+
+    confetti.style.left = Math.random() * 100 + "vw";
+    confetti.style.animationDelay = Math.random() * 2 + "s";
+    confetti.style.fontSize = (10 + Math.random() * 15) + "px";
+
+    document.body.appendChild(confetti);
+
+    setTimeout(() => {
+      confetti.remove();
+    }, 6000);
+
+  }
+
+}
+
+</script>
+
+</body>
+  </html>
